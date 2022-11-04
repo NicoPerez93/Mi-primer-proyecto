@@ -1,48 +1,44 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .barra-superior {
   background-color: #f9b5b3;
-  height: 35px;
-}
+  height: 35px; }
 
 .ig-descuento {
   display: flex;
   justify-content: space-between;
   padding: 5px;
-  align-items:flex-start;
-}
+  align-items: flex-start; }
 
 .titulo {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-}
-
-.texto-oculto {
-  color: white;
-  padding: 5px;
-}
+  text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey; }
 
 .descuento {
   color: white;
   font-size: 14px;
-  align-items: center;
-}
+  align-items: center; }
+
+.hr {
+  padding: 0px;
+  margin: 0px; }
 
 .lista {
   display: flex;
   text-decoration: none;
   justify-content: space-evenly;
   align-items: center;
-  list-style: none;
+  list-style-type: none;
   font-size: 18px;
+  margin: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
-}
+  background-color: #f7d2d1; }
 
 .tipo-de-prenda {
   margin: 25px;
@@ -50,110 +46,116 @@
   justify-content: space-around;
   align-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .talles {
   display: flex;
   margin: 20px;
   align-content: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .talles-prendas {
   margin: 50px;
-  text-align: center;
-}
+  text-align: center; }
 
 .remeras {
   display: flex;
   margin: 50px;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
-  align-content: center;
-}
+  align-content: center; }
 
 .buzos {
   display: flex;
   margin: 50px;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
-  align-content: center;
-}
+  align-content: center; }
 
 .nombre {
   display: flex;
   margin: 50px;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
-  align-content: center;
-}
+  align-content: center; }
 
 .texto-contacto {
   text-align: center;
-  padding: 20px;
-}
+  padding: 20px; }
 
 .contacto {
   padding: 40px;
-  text-align: center;
-}
+  text-align: center; }
 
-input[type=text], select, textarea {
+input[type=text] {
   width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #f9b5b3;
-    color: white;
-    padding: 12px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-    
-  .container {
-    display: flex;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-end;
-  }
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
 
-  .seleccion-prendas {
-    margin: 50px;
-    display: flex;
-    align-items: baseline;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 8%;
-  }
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
 
-  .b-example-divider {
-    height: 2rem;
-    background-color: #fffffff9;
-    border-width: 1px 0;
-  }
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
 
-  .container1 {
-      --bs-gutter-x: 1.5rem;
-      --bs-gutter-y: 0;
-      width: 100%;
-      padding-right: calc(var(--bs-gutter-x) * .5);
-      padding-left: calc(var(--bs-gutter-x) * .5);
-      margin-right: auto;
-      margin-left: auto;
-    }
+input[type=submit] {
+  background-color: #f9b5b3;
+  color: white;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+.formulario {
+  display: flex;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end; }
+
+.seleccion-prendas {
+  margin: 50px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 8%; }
+
+.divisor {
+  height: 2rem;
+  background-color: #fffffff9;
+  border-width: 1px 0; }
+
+.container1 {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto; }

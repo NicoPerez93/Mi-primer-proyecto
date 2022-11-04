@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
@@ -19,31 +20,32 @@
                     width="20">
             </a>
             <p class="descuento">15% OFF ABONANDO CON TRANSFERENCIA BANCARIA</p>
-            <p class="texto-oculto">@Whaynotnow</p>
         </div>
     </header>
 
     <div>
-        <h1>
-            <p class="titulo">WHAY NOT NOW MOM</p>
-        </h1>
+        <h1 class="titulo">WHAY NOT NOW MOM</h1>
     </div>
 
-    <hr>
+    <hr class="hr">
     <section class="menu-top">
         <nav class="Menu">
             <ul class="lista">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./prendas.html">Prendas</a></li>
+                <li><a href="./talles.html">Talles</a></li>
                 <li><a href=".//contact.html">Contacto</a></li>
             </ul>
         </nav>
     </section>
-    <hr>
+    <hr class="hr">
+
+    <div class="divisor"></div>
 
 <h2 class="contacto">Contacto</h2>
 
-<div class="container">
+<div class="formulario">
+<form>
     <label for="nombre">Nombre</label>
     <input type="text" id="name" name="nombre" placeholder="">
 
@@ -51,16 +53,23 @@
     <input type="text" id="last-name" name="nombre" placeholder="">
 
     <label for="enviar">Contanos en que podemos ayudarte</label>
-    <textarea id="enviar" name="enviar" placeholder="" style="height:200px"></textarea>
+    <textarea id="enviar" name="enviar" placeholder=""></textarea>
 
     <input type="submit" value="Enviar">
   </form>
+</div>
+  
+<div class="divisor"></div>
 
-    <section>
-        <footer class="footer">
-          <p>Todos los derechos reservados</p>
-        </footer>
-    </section>
+<div class="container1">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© 2022 Todos los derechos reservados</span>
+      </div>
+    </footer>
+  </div>
 
 </body>
 
