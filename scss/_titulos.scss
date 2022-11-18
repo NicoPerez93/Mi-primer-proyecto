@@ -1,6 +1,19 @@
-.titulo {
+@mixin estilo-titulos {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
     text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 }
+
+.titulo, h2 {
+	font-size: 3rem;
+	@include estilo-titulos;
+}
+
+.h4 {
+	font-size: 1.5rem;
+	@include estilo-titulos;
+}
+
+
+

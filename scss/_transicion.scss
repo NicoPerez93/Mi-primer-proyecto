@@ -1,12 +1,23 @@
-.card-image-top {
-	background-color: $background-color_4;
-	border: none;
-	color: $color_1;
-	padding: 16px 32px;
-	text-align: center;
-	font-size: 16px;
-	margin: 4px 2px;
-	opacity: 0.6;
-	transition: 0.3s;
-	opacity: 1;
+$background-color_1: red;
+
+@keyframes animacion {
+	0% {
+		background-color: red;
+	}
+	25% {
+		background-color: yellow;
+	}
+	50% {
+		background-color: blue;
+	}
+	100% {
+		background-color: green;
+	}
+}
+div {
+	width: 100px;
+	height: 100px;
+	background-color: $background-color_1;
+	animation-name: animacion;
+	animation-duration: 4s;
 }
