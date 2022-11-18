@@ -1,7 +1,8 @@
-$color_1: white;
-$background-color_1: #f9b5b3;
-$background-color_2: #f2f2f2;
-$background-color_3: #fffffff9;
+@import "reset";
+@import "titulos";
+@import "listas";
+@import "formulario";
+@import "colores";
 
 * {
 	margin: 0;
@@ -18,12 +19,6 @@ $background-color_3: #fffffff9;
 	padding: 5px;
 	align-items: flex-start;
 }
-.titulo {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	text-align: center;
-    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
-}
 
 .descuento {
 	color: $color_1;
@@ -31,23 +26,17 @@ $background-color_3: #fffffff9;
 	align-items: center;
 }
 
+@media (max-width: 380px) {
+	.descuento {
+		font-size: 10px;
+	}
+}
+
 .hr {
     padding: 0px;
     margin: 0px;
 }
 
-.lista {
-	display: flex;
-	text-decoration: none;
-	justify-content: space-evenly;
-	align-items: center;
-	list-style-type: none;
-	font-size: 18px;
-    margin: 0px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-    background-color: #f7d2d1;
-}
 .tipo-de-prenda {
 	margin: 25px;
 	display: flex;
@@ -80,70 +69,7 @@ $background-color_3: #fffffff9;
 	flex-wrap: nowrap;
 	align-content: center;
 }
-.nombre {
-	display: flex;
-	margin: 50px;
-	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	align-content: center;
-}
-.texto-contacto {
-	text-align: center;
-	padding: 20px;
-}
-.contacto {
-	padding: 40px;
-	text-align: center;
-}
-input[type=text] {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-}
-select {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-}
-textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-}
-input[type=submit] {
-	background-color: $background-color_1;
-	color: $color_1;
-	padding: 12px 12px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
-.formulario {
-	display: flex;
-	border-radius: 5px;
-	background-color: $background-color_2;
-	padding: 20px;
-	margin-left: 20%;
-	margin-right: 20%;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-content: flex-end;
-}
+
 .seleccion-prendas {
 	margin: 50px;
 	display: flex;

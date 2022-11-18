@@ -1,0 +1,64 @@
+.nombre {
+	display: flex;
+	margin: 50px;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	align-content: center;
+}
+.texto-contacto {
+	text-align: center;
+	padding: 20px;
+}
+.contacto {
+	padding: 40px;
+	text-align: center;
+}
+input[type=text] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+select {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+input[type=submit] {
+	background-color: $background-color_1;
+	color: $color_1;
+	padding: 12px 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.formulario {
+	display: flex;
+	border-radius: 5px;
+	background-color: $background-color_2;
+	padding: 20px;
+	margin-left: 20%;
+	margin-right: 20%;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-end;
+}
