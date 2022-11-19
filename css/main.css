@@ -62,11 +62,13 @@ a, a:active {
   color: lightpink; }
 
 .titulo, h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey; }
+  text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+  padding-left: 5px;
+  padding-right: 5px; }
 
 .h4 {
   font-size: 1.5rem;
@@ -172,7 +174,6 @@ h2, div {
   flex-wrap: nowrap;
   align-content: center; }
 
-@keyframes animacion;
 .buzos {
   display: flex;
   margin: 50px;
