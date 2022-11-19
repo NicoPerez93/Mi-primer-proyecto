@@ -121,7 +121,7 @@ input[type=submit] {
   flex-wrap: wrap;
   align-content: flex-end; }
 
-h2, div {
+div {
   font-family: 'Dosis', sans-serif; }
 
 * {
@@ -167,14 +167,7 @@ h2, div {
   margin: 50px;
   text-align: center; }
 
-.remeras {
-  display: flex;
-  margin: 50px;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  align-content: center; }
-
-.buzos {
+.remeras, .buzos {
   display: flex;
   margin: 50px;
   flex-direction: row-reverse;

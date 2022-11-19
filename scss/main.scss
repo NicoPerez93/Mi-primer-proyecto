@@ -61,11 +61,7 @@
 	align-content: center;
 }
 .buzos {
-	display: flex;
-	margin: 50px;
-	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	align-content: center;
+	@extend .remeras
 }
 
 .seleccion-prendas {
